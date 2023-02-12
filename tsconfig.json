@@ -1,12 +1,21 @@
 {
-  "include": ["./src/**/*.ts"],
+  "include": [
+    "src/**/*.ts"
+  ],
+  "exclude": [
+    "**/node_modules",
+    "**/.*/",
+    "src/**/*.test.ts"
+  ],
   "compilerOptions": {
-    "allowSyntheticDefaultImports": true,
+    "allowSyntheticDefaultImports": false,
     "declaration": true,
     "declarationMap": true,
-    "esModuleInterop": true,
+    "esModuleInterop": false,
     "lib": ["esnext"],
     "module": "esnext",
+    "moduleResolution": "nodenext",
+    "moduleDetection": "auto",
     "moduleResolution": "node",
     "outDir": "./dist",
     "sourceMap": true,
